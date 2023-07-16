@@ -1,50 +1,132 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
 <head>
-  <title>My Website</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="./social-media-icons.css">
-  <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Custom CSS -->
+  <style>
+    .social-icons {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 20px;
+    }
+    .social-icons ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+    .social-icons li {
+      margin-right: 10px;
+    }
+    .social-icons li:last-child {
+      margin-right: 0;
+    }
+    .social-icons .icon {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      text-decoration: none;
+    }
+    .social-icons .icon i {
+      margin-right: 5px;
+    }
+    .project-button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 10px;
+      font-size: 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    .project-button:hover {
+      background-color: #0056b3;
+    }
+    .card-img-top {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+    }
+  </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Resume</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Qualifications</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Projects</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="id5">Social Media</a>
-    </li>
-  </ul>
-</nav>
+  <div class="container">
+    <h1>Welcome</h1>
 
-<div class="container mt-5">
-  <h1>Welcome to my website!</h1>
-  <p>This is where I'll be sharing information about my qualifications, projects, and social media accounts.</p>
-</div>
-<div class="social-menu" id="id1">
+    <div class="row">
+      <!-- Projects row -->
+      <div class="col-md-6">
+        <div class="card">
+          <img src="https://logowik.com/content/uploads/images/student5651.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Student Management System</h5>
+            <a href="https://sms-frontend-livid.vercel.app/" target="_blank" class="project-button">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <img src="https://canopylab.com/wp-content/uploads/2020/05/Working-with-adaptive-quizzes-A-beginners-guide.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Flash Cards</h5>
+            <a href="https://flash-cards-topaz-nu.vercel.app/" target="_blank" class="project-button">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Social media row -->
+      <div class="col-md-12">
         <h2>Social Media</h2>
-        <ul>
-            <li><a href="https://github.com/Puneeth-03" target="blank"><i class="fab fa-github"></i></i></a></li>
-            <li><a href="https://www.instagram.com/puneethbatchu/" target="blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/puneeth-batchu-9369bb244/" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
-        </ul>
-</div>
+        <div class="social-icons">
+          <ul>
+            <li>
+              <a href="https://github.com/Puneeth-03" target="_blank" class="icon">
+                <i class="fab fa-github"></i>
+                <span>Github</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/puneethbatchu/" target="_blank" class="icon">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/puneeth-batchu-9369bb244/" target="_blank" class="icon">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:batchupuneeth2003@gmail.com" target="_blank" class="icon">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+              </a>
+            </li>
+            <!-- Add more social media platforms and icons as needed -->
+          </ul>
+        </div>
+      </div>
+    </div>
 
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <!-- Font Awesome icons -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </body>
 </html>
